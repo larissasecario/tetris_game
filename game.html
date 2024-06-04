@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris Game</title>
+    <!-- add Css e Javascript -->
+    <link rel="icon" href="./img/icone.png">
+    <link rel="stylesheet" href="./style.css"/>
+    <script type='module' src="./script.js" ></script>
+  </head>
+
+  <!-- Conteúdo -->
+  <body>
+   
+  <div class="tela-principal">
+
+     <!-- Lado da tela do jogo-->
+    <div class="lado-game">
+      <div id="borda-tela-game">
+         <canvas id="meu-canvas" width="400" height="800" ></canvas>
+      </div>
+    </div>
+
+    <!-- Lado das informações-->
+    <div class="lado-informacao">
+
+      <element class = "title-color">Próximo</element>
+      <div>
+        <canvas id="proximo-elemento" width="140" height="120"></canvas>
+      </div>
+      <element class = "title-color">Pontos</element>
+      <div>
+        <div class='numeros'id="score">0</div>
+      </div>
+      
+
+      <element class = "title-color">Level</element>
+      <div class="tela-score">
+        <div class='numeros' id="level">1</div>
+      </div>
+
+      <element class = "title-color">Como jogar</element>
+      <div class="tela-informacao">
+       
+        <p><b> Mover direita:</b> D / &#8594; </p>
+        <p><b> Mover esquerda:</b> A / &#8592; </p>
+        <p><b> Soltar peça:</b> S / &#8595; </p>
+        <p><b> Girar peça:</b> W / &#8593; </p>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div id="game-over">
+    <div class="conteudo-game-over ">
+        <h1>GAME OVER</h1>
+        <button id="bnt-jogar-novamente">Jogar novamente</button>
+    </div>
+  </div>
+  
+   
+
+  </body>
+</html>

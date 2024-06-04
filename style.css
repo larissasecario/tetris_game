@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url('img/bg2.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-color: #343461;
+    overflow: hidden;
+    outline: none;
+    user-select: none;
+}
+
+body:focus {
+    outline: none;
+}
+
+.tela-principal{
+    width: 800px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.lado-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+#borda-tela-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: px;
+    background-color: #f3f3f4;
+    height: 92%;
+    width: 90%;
+}
+
+.lado-informacao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 35%;
+    height: 88%;
+}
+
+.lado-informacao > div{
+    width: 90%;
+    height: 25%;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f3f3f4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#meu-canvas{
+    display: block;
+    margin:0 auto;
+
+}
+
+.numeros {
+    font-size: 42px;
+    font-weight: bold;
+
+}
+
+#texto-proximo {
+  margin-top: 10px;
+}
+
+#game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.conteudo-game-over {
+    text-align: center;
+}
+
+#bnt-jogar-novamente {
+    margin: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+#bnt-jogar-novamente:hover {
+    color: black;
+    background-color: white;
+    transition: all .5s;
+}
+
+#game-over{
+    display: none;
+}
+
+.conteudo-game-over > h1 {
+    font-size: 60px;
+    color: azure;
+
+}
+
+.title-color{
+    color: #8FDBF5;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-right: 40px;
+    text-align: right;
+}
